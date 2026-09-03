@@ -1,0 +1,43 @@
+Network segmentation in computer networking is the act or practice of splitting a computer network into subnetworks, each being a network segment. Advantages of such splitting are primarily for boosting performance and improving security.
+
+
+== Advantages ==
+Reduced congestion: On a segmented network, there are fewer hosts per subnetwork and the traffic and thus congestion per segment is reduced
+Improved security:
+Broadcasts will be contained to the segment. Internal network structure will not be visible from outside.
+There is a reduced attack surface available to pivot in if one of the hosts on the network segment is compromised. Common attack vectors such as LLMNR and NetBIOS poisoning can be partially alleviated by proper network segmentation as they only work on the local network. For this reason, it is recommended to segment the various areas of a network by usage. A basic example would be to split up web servers, database servers and standard user machines each into their own segment.
+By creating network segments containing only the resources specific to the consumers that you authorise access to, you are creating an environment of least privilege
+Containing network problems: Limiting the effect of local failures on other parts of network
+Controlling visitor access: Visitor access to the network can be controlled by implementing VLANs to segregate the network
+
+
+== Improved security ==
+
+When a cyber-criminal gains unauthorized access to a network, segmentation or “zoning” can provide effective controls to limit further movement across the network. 
+Standards provide guidance on creating clear separation of data within the network; examples include:
+
+IEC 62443 (securing Industrial Automation and Control Systems)
+PCI-DSS (Payment Card Industry Data Security Standard)
+For example, separating the network for Payment Card authorizations from those for Point-of-Service (till) or customer Wi-Fi traffic.  A sound security policy entails segmenting the network into multiple zones, with varying security requirements, and rigorously enforcing the policy on what is allowed to move from zone to zone.
+
+
+== Controlling visitor access ==
+Finance and Human Resources typically need access via their own VLAN to their application servers because of the confidential nature of the information they process and store. Other groups of personnel may require their own segregated networks, such as server administrators, security administration, managers and executives.
+Third parties are usually required to have their own segments, with different administration passwords from the main network, to avoid attacks via a compromised, less well-protected third-party site.
+
+
+== Means of segregation ==
+Segregation is typically achieved by a combination of firewalls and VLANs (virtual local area networks). Software-defined networking (SDN) can allow the creation and management of micro-segmented networks.
+
+
+== See also ==
+Collision domain
+Cross-domain solution
+Flat network
+Network bridge
+Network switch
+Router (computing)
+Unidirectional network
+
+
+== References ==

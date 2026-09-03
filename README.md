@@ -17,6 +17,6 @@ Live endpoint: https://rag-collapse-lab.paulyohanna.workers.dev
 ## Non-goals
 
 - Not trying to detect AI-generated text after the fact (unreliable - that's the point; this project tags provenance at write time instead).
-- Not a production system. Toy corpus (~30 docs), small models, free tier only.
+- Not a production system. Toy corpus (~15 docs), small models, free tier only.
 - Not claiming novelity over the 2026 "RAG collapse" literature - this is an independent small-scale replication + control demo, with citations.
  

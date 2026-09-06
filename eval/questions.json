@@ -1,0 +1,17 @@
+[
+  { "id": 1, "question": "What is the main purpose of a firewall?", "reference": "A firewall monitors and controls incoming and outgoing network traffic based on security rules, acting as a barrier between trusted and untrusted networks." },
+  { "id": 2, "question": "What is the difference between network-based and host-based firewalls?", "reference": "Network-based firewalls are positioned between networks and control traffic at that boundary, while host-based firewalls run on individual devices to control traffic to and from that specific host." },
+  { "id": 3, "question": "What does an intrusion detection system do?", "reference": "An intrusion detection system monitors a network or systems for malicious activity or policy violations and reports or logs any detected intrusions." },
+  { "id": 4, "question": "How does a VPN protect network traffic?", "reference": "A VPN protects network traffic through encryption and tunneling protocols, creating a secure connection over a public network." },
+  { "id": 5, "question": "What is Transport Layer Security used for?", "reference": "TLS is a cryptographic protocol used to provide secure communication over a computer network, commonly used to secure web traffic." },
+  { "id": 6, "question": "How does public-key cryptography work?", "reference": "Public-key cryptography uses a pair of keys, a public key for encryption and a private key for decryption, allowing secure communication without sharing a secret key in advance." },
+  { "id": 7, "question": "What is a denial-of-service attack?", "reference": "A denial-of-service attack attempts to make a machine or network resource unavailable by overwhelming it with traffic or requests." },
+  { "id": 8, "question": "What happens during a man-in-the-middle attack?", "reference": "In a man-in-the-middle attack, an attacker secretly intercepts and possibly alters communications between two parties who believe they are communicating directly." },
+  { "id": 9, "question": "What is phishing?", "reference": "Phishing is a social engineering attack where attackers impersonate trusted entities to trick victims into revealing sensitive information." },
+  { "id": 10, "question": "What is malware?", "reference": "Malware is software intentionally designed to cause damage, disrupt systems, or gain unauthorized access to computer systems." },
+  { "id": 11, "question": "Why is network segmentation used?", "reference": "Network segmentation divides a network into smaller parts to limit the spread of attacks and control access between different segments." },
+  { "id": 12, "question": "What is a DMZ in network security?", "reference": "A DMZ (demilitarized zone) is a subnetwork that exposes external-facing services to an untrusted network, like the internet, while keeping the internal network separate." },
+  { "id": 13, "question": "What are the layers of the OSI model?", "reference": "The OSI model has seven layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application." },
+  { "id": 14, "question": "What is a honeypot used for in security?", "reference": "A honeypot is a decoy system designed to attract attackers, allowing defenders to study attack methods and divert attackers from real systems." },
+  { "id": 15, "question": "What is the purpose of a penetration test?", "reference": "A penetration test simulates a cyberattack against a system to identify exploitable vulnerabilities before real attackers can find them." }
+]

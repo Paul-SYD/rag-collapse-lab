@@ -1,0 +1,647 @@
+[
+  {
+    "id": 1,
+    "question": "What is the main purpose of a firewall?",
+    "reference": "A firewall monitors and controls incoming and outgoing network traffic based on security rules, acting as a barrier between trusted and untrusted networks.",
+    "answer": "The main purpose of a firewall is to monitor and control incoming and outgoing network traffic based on configurable security rules.",
+    "sources_used": [
+      {
+        "id": "firewall-computing.txt-chunk-0",
+        "score": 0.8161137,
+        "source": "firewall-computing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "firewall-computing.txt-chunk-3",
+        "score": 0.79876846,
+        "source": "firewall-computing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "firewall-computing.txt-chunk-10",
+        "score": 0.78634816,
+        "source": "firewall-computing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "firewall-computing.txt-chunk-2",
+        "score": 0.7580736,
+        "source": "firewall-computing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "firewall-computing.txt-chunk-11",
+        "score": 0.75790036,
+        "source": "firewall-computing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "What is the difference between network-based and host-based firewalls?",
+    "reference": "Network-based firewalls are positioned between networks and control traffic at that boundary, while host-based firewalls run on individual devices to control traffic to and from that specific host.",
+    "answer": "Network-based firewalls are positioned between two or more networks, typically between the local area network (LAN) and wide area network (WAN), their basic function being to control the flow of data between connected networks. \n\nHost-based firewalls are deployed directly on the host itself to control network traffic or other computing resources.",
+    "sources_used": [
+      {
+        "id": "firewall-computing.txt-chunk-3",
+        "score": 0.863586,
+        "source": "firewall-computing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "firewall-computing.txt-chunk-2",
+        "score": 0.7923679,
+        "source": "firewall-computing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "firewall-computing.txt-chunk-0",
+        "score": 0.7763242,
+        "source": "firewall-computing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "intrusion-detection-system.txt-chunk-1",
+        "score": 0.755198,
+        "source": "intrusion-detection-system.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "denial-of-service-attack-part2.txt-chunk-25",
+        "score": 0.7513472,
+        "source": "denial-of-service-attack-part2.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "What does an intrusion detection system do?",
+    "reference": "An intrusion detection system monitors a network or systems for malicious activity or policy violations and reports or logs any detected intrusions.",
+    "answer": "An intrusion detection system (IDS) monitors a network or systems for malicious activity or policy violations, and typically reports any intrusion activity or violation to an administrator or collects the information centrally using a security information and event management (SIEM) system.",
+    "sources_used": [
+      {
+        "id": "intrusion-detection-system.txt-chunk-0",
+        "score": 0.8643658,
+        "source": "intrusion-detection-system.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "intrusion-detection-system.txt-chunk-9",
+        "score": 0.81245154,
+        "source": "intrusion-detection-system.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "intrusion-detection-system.txt-chunk-3",
+        "score": 0.80454355,
+        "source": "intrusion-detection-system.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "intrusion-detection-system.txt-chunk-5",
+        "score": 0.8024593,
+        "source": "intrusion-detection-system.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "intrusion-detection-system.txt-chunk-4",
+        "score": 0.8013372,
+        "source": "intrusion-detection-system.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "How does a VPN protect network traffic?",
+    "reference": "A VPN protects network traffic through encryption and tunneling protocols, creating a secure connection over a public network.",
+    "answer": "A VPN protects network traffic through encryption, tunneling protocols, and other security measures such as message authentication codes, which prevent data from being altered or tampered with without being rejected, enhancing data integrity. Additionally, it can also be secured by tamper proofing via a message authentication code.",
+    "sources_used": [
+      {
+        "id": "virtual-private-network.txt-chunk-0",
+        "score": 0.78070533,
+        "source": "virtual-private-network.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "virtual-private-network.txt-chunk-4",
+        "score": 0.75993615,
+        "source": "virtual-private-network.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "virtual-private-network.txt-chunk-7",
+        "score": 0.7238606,
+        "source": "virtual-private-network.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "virtual-private-network.txt-chunk-14",
+        "score": 0.7183957,
+        "source": "virtual-private-network.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "virtual-private-network.txt-chunk-8",
+        "score": 0.71764696,
+        "source": "virtual-private-network.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "What is Transport Layer Security used for?",
+    "reference": "TLS is a cryptographic protocol used to provide secure communication over a computer network, commonly used to secure web traffic.",
+    "answer": "Transport Layer Security (TLS) is used to provide communications security over a computer network, such as the Internet. It is used in applications such as email, instant messaging, and voice over IP, and is primarily used to secure HTTPS.",
+    "sources_used": [
+      {
+        "id": "transport-layer-security.txt-chunk-0",
+        "score": 0.8133832,
+        "source": "transport-layer-security.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "transport-layer-security-part1.txt-chunk-0",
+        "score": 0.8133832,
+        "source": "transport-layer-security-part1.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "osi-model.txt-chunk-10",
+        "score": 0.7827901,
+        "source": "osi-model.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "transport-layer-security.txt-chunk-23",
+        "score": 0.775175,
+        "source": "transport-layer-security.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "transport-layer-security-part1.txt-chunk-23",
+        "score": 0.775175,
+        "source": "transport-layer-security-part1.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "How does public-key cryptography work?",
+    "reference": "Public-key cryptography uses a pair of keys, a public key for encryption and a private key for decryption, allowing secure communication without sharing a secret key in advance.",
+    "answer": "Public-key cryptography works by using pairs of related keys: a public key and a corresponding private key. The public key is used for encryption, while the private key is used for decryption. Anyone with the public key can encrypt a message, but only the person with the corresponding private key can decrypt it. This allows for secure communication without the need to share a secret key between the sender and receiver.",
+    "sources_used": [
+      {
+        "id": "public-key-cryptography.txt-chunk-0",
+        "score": 0.818976,
+        "source": "public-key-cryptography.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "public-key-cryptography.txt-chunk-3",
+        "score": 0.7819572,
+        "source": "public-key-cryptography.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "public-key-cryptography.txt-chunk-1",
+        "score": 0.78162766,
+        "source": "public-key-cryptography.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "public-key-cryptography.txt-chunk-14",
+        "score": 0.7542825,
+        "source": "public-key-cryptography.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "public-key-cryptography.txt-chunk-8",
+        "score": 0.75100744,
+        "source": "public-key-cryptography.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "What is a denial-of-service attack?",
+    "reference": "A denial-of-service attack attempts to make a machine or network resource unavailable by overwhelming it with traffic or requests.",
+    "answer": "A denial-of-service attack (DoS attack) is a cyberattack in which the perpetrator seeks to make a machine or network resource unavailable to its intended users by temporarily or indefinitely disrupting services of a host connected to a network.",
+    "sources_used": [
+      {
+        "id": "denial-of-service-attack.txt-chunk-0",
+        "score": 0.87535536,
+        "source": "denial-of-service-attack.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "denial-of-service-attack-part1.txt-chunk-0",
+        "score": 0.87535536,
+        "source": "denial-of-service-attack-part1.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "denial-of-service-attack.txt-chunk-2",
+        "score": 0.86473286,
+        "source": "denial-of-service-attack.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "denial-of-service-attack-part1.txt-chunk-2",
+        "score": 0.86473286,
+        "source": "denial-of-service-attack-part1.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "denial-of-service-attack.txt-chunk-9",
+        "score": 0.83972335,
+        "source": "denial-of-service-attack.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "What happens during a man-in-the-middle attack?",
+    "reference": "In a man-in-the-middle attack, an attacker secretly intercepts and possibly alters communications between two parties who believe they are communicating directly.",
+    "answer": "A man-in-the-middle attack involves an attacker secretly relaying and possibly altering the communications between two parties who believe that they are directly communicating with each other, where in actuality the attacker has inserted themselves between the two user parties. \n\nIn this scenario, the attacker must be able to intercept all relevant messages passing between the two victims and inject new ones. This can include intercepting and altering public keys, encrypted messages, and responses, and re-encrypting them using the correct public keys to avoid suspicion. \n\nIn some cases, the attacker can deliver a false message to one of the parties under the guise of the other party, breaking non-repudiation.",
+    "sources_used": [
+      {
+        "id": "man-in-the-middle-attack.txt-chunk-0",
+        "score": 0.8211823,
+        "source": "man-in-the-middle-attack.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "man-in-the-middle-attack.txt-chunk-1",
+        "score": 0.81484395,
+        "source": "man-in-the-middle-attack.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "public-key-cryptography.txt-chunk-7",
+        "score": 0.79158103,
+        "source": "public-key-cryptography.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "phishing.txt-chunk-10",
+        "score": 0.77304137,
+        "source": "phishing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "denial-of-service-attack.txt-chunk-34",
+        "score": 0.7234731,
+        "source": "denial-of-service-attack.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "What is phishing?",
+    "reference": "Phishing is a social engineering attack where attackers impersonate trusted entities to trick victims into revealing sensitive information.",
+    "answer": "Phishing is a form of social engineering and a scam where attackers deceive people into revealing sensitive information or installing malware such as viruses, worms, adware, or ransomware.",
+    "sources_used": [
+      {
+        "id": "phishing.txt-chunk-0",
+        "score": 0.8314245,
+        "source": "phishing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "phishing.txt-chunk-1",
+        "score": 0.8093645,
+        "source": "phishing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "phishing.txt-chunk-6",
+        "score": 0.79719156,
+        "source": "phishing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "phishing.txt-chunk-14",
+        "score": 0.76707304,
+        "source": "phishing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "phishing.txt-chunk-8",
+        "score": 0.7581419,
+        "source": "phishing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "What is malware?",
+    "reference": "Malware is software intentionally designed to cause damage, disrupt systems, or gain unauthorized access to computer systems.",
+    "answer": "Malware is any software intentionally designed to cause disruption or destruction to a computer, server, client, or computer network, leak private information, gain unauthorized access to information or systems, deprive access to information, or interfere with the user's computer security and privacy without their knowledge.",
+    "sources_used": [
+      {
+        "id": "malware.txt-chunk-0",
+        "score": 0.8597612,
+        "source": "malware.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "malware.txt-chunk-5",
+        "score": 0.77968395,
+        "source": "malware.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "malware.txt-chunk-4",
+        "score": 0.76710963,
+        "source": "malware.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "honeypot-computing.txt-chunk-6",
+        "score": 0.7650052,
+        "source": "honeypot-computing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "malware.txt-chunk-14",
+        "score": 0.756795,
+        "source": "malware.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "Why is network segmentation used?",
+    "reference": "Network segmentation divides a network into smaller parts to limit the spread of attacks and control access between different segments.",
+    "answer": "Network segmentation is used for the following reasons:\n\n1. Reduced congestion: On a segmented network, there are fewer hosts per subnetwork and the traffic and thus congestion per segment is reduced.\n2. Improved security:\n   - Broadcasts will be contained to the segment.\n   - Internal network structure will not be visible from outside.\n   - There is a reduced attack surface available to pivot in if one of the hosts on the network segment is compromised.\n   - Common attack vectors can be partially alleviated.\n3. Containing network problems: Limiting the effect of local failures on other parts of network.\n4. Controlling visitor access: Visitor access to the network can be controlled by implementing VLANs to segregate the network.\n5. Hindering the ability of infectious malware to replicate itself across the wider network.",
+    "sources_used": [
+      {
+        "id": "network-segmentation.txt-chunk-0",
+        "score": 0.8629615,
+        "source": "network-segmentation.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "network-segmentation.txt-chunk-1",
+        "score": 0.80146766,
+        "source": "network-segmentation.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "network-segmentation.txt-chunk-2",
+        "score": 0.75196,
+        "source": "network-segmentation.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "malware.txt-chunk-28",
+        "score": 0.71475565,
+        "source": "malware.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "network-segmentation.txt-chunk-5",
+        "score": 0.71426636,
+        "source": "network-segmentation.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "What is a DMZ in network security?",
+    "reference": "A DMZ (demilitarized zone) is a subnetwork that exposes external-facing services to an untrusted network, like the internet, while keeping the internal network separate.",
+    "answer": "A DMZ (demilitarized zone) is a physical or logical subnetwork that contains and exposes an organization's external-facing services to an untrusted network, such as the Internet, adding an additional layer of security to an organization's local area network (LAN).",
+    "sources_used": [
+      {
+        "id": "demilitarized-zone-computing.txt-chunk-0",
+        "score": 0.88288045,
+        "source": "demilitarized-zone-computing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "demilitarized-zone-computing.txt-chunk-1",
+        "score": 0.80551326,
+        "source": "demilitarized-zone-computing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "demilitarized-zone-computing.txt-chunk-9",
+        "score": 0.7793019,
+        "source": "demilitarized-zone-computing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "demilitarized-zone-computing.txt-chunk-8",
+        "score": 0.77887964,
+        "source": "demilitarized-zone-computing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "demilitarized-zone-computing.txt-chunk-5",
+        "score": 0.7707275,
+        "source": "demilitarized-zone-computing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "question": "What are the layers of the OSI model?",
+    "reference": "The OSI model has seven layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application.",
+    "answer": "The layers of the OSI model, as described in the text, are:\n\n1. Physical layer\n2. Data Link layer\n3. Network layer\n4. Transport layer\n5. Session layer\n6. Presentation layer\n7. Application layer",
+    "sources_used": [
+      {
+        "id": "osi-model.txt-chunk-4",
+        "score": 0.8165731,
+        "source": "osi-model.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "osi-model.txt-chunk-25",
+        "score": 0.8137744,
+        "source": "osi-model.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "osi-model.txt-chunk-0",
+        "score": 0.8036969,
+        "source": "osi-model.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "osi-model.txt-chunk-18",
+        "score": 0.7986065,
+        "source": "osi-model.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "osi-model.txt-chunk-8",
+        "score": 0.7854439,
+        "source": "osi-model.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "question": "What is a honeypot used for in security?",
+    "reference": "A honeypot is a decoy system designed to attract attackers, allowing defenders to study attack methods and divert attackers from real systems.",
+    "answer": "A honeypot is used to detect, deflect, or counteract attempts at unauthorized use of information systems. It is used to distract potential attackers from more important information and machines on the real network, learn about the forms of attacks they can suffer, and examine such attacks during and after the exploitation of a honeypot. It provides a way to prevent and see vulnerabilities in a specific network system.",
+    "sources_used": [
+      {
+        "id": "honeypot-computing.txt-chunk-0",
+        "score": 0.8553406,
+        "source": "honeypot-computing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "honeypot-computing.txt-chunk-14",
+        "score": 0.80668736,
+        "source": "honeypot-computing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "honeypot-computing.txt-chunk-6",
+        "score": 0.80602765,
+        "source": "honeypot-computing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "network-security.txt-chunk-1",
+        "score": 0.78457165,
+        "source": "network-security.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "honeypot-computing.txt-chunk-12",
+        "score": 0.78378487,
+        "source": "honeypot-computing.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "question": "What is the purpose of a penetration test?",
+    "reference": "A penetration test simulates a cyberattack against a system to identify exploitable vulnerabilities before real attackers can find them.",
+    "answer": "The primary goal of a penetration test is to find vulnerabilities that could be exploited by a nefarious actor, and to inform the client of those vulnerabilities along with recommended mitigation strategies.",
+    "sources_used": [
+      {
+        "id": "penetration-test.txt-chunk-1",
+        "score": 0.8583237,
+        "source": "penetration-test.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "penetration-test.txt-chunk-0",
+        "score": 0.8046973,
+        "source": "penetration-test.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "penetration-test.txt-chunk-22",
+        "score": 0.78709674,
+        "source": "penetration-test.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "penetration-test.txt-chunk-8",
+        "score": 0.7766021,
+        "source": "penetration-test.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      },
+      {
+        "id": "penetration-test.txt-chunk-3",
+        "score": 0.76277846,
+        "source": "penetration-test.txt",
+        "provenance": "human",
+        "gen_depth": 0
+      }
+    ]
+  }
+]

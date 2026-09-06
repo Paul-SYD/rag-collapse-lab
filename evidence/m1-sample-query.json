@@ -1,0 +1,68 @@
+{
+  "query": "What is a firewall",
+  "results": {
+    "count": 5,
+    "matches": [
+      {
+        "id": "firewall-computing.txt-chunk-0",
+        "score": 0.8956871,
+        "metadata": {
+          "chunk_index": 0,
+          "gen_depth": 0,
+          "ingested_at": "2026-09-04T22:09:09.762Z",
+          "provenance": "human",
+          "source": "firewall-computing.txt",
+          "text": "In computing, a firewall is a network security system that monitors and controls incoming and outgoing network traffic based on configurable security rules. A firewall typically establishes a barrier between a trusted network and an untrusted network, such as the Internet or between several VLANs. Firewalls can be categorized as network-based or host-based."
+        }
+      },
+      {
+        "id": "firewall-computing.txt-chunk-3",
+        "score": 0.81169546,
+        "metadata": {
+          "chunk_index": 3,
+          "gen_depth": 0,
+          "ingested_at": "2026-09-04T22:09:11.556Z",
+          "provenance": "human",
+          "source": "firewall-computing.txt",
+          "text": "Firewalls are categorized as a network-based or a host-based system. Network-based firewalls are positioned between two or more networks, typically between the local area network (LAN) and wide area network (WAN), their basic function being to control the flow of data between connected networks. They are either a software appliance running on general-purpose hardware, a hardware appliance running on special-purpose hardware, or a virtual appliance running on a virtual host controlled by a hypervisor. Firewall appliances may also offer non-firewall functionality, such as DHCP or VPN services. Host-based firewalls are deployed directly on the host itself to control network traffic or other computing resources. This can be a daemon or service as a part of the operating system or an agent application for protection."
+        }
+      },
+      {
+        "id": "firewall-computing.txt-chunk-11",
+        "score": 0.8020616,
+        "metadata": {
+          "chunk_index": 11,
+          "gen_depth": 0,
+          "ingested_at": "2026-09-04T22:09:16.301Z",
+          "provenance": "human",
+          "source": "firewall-computing.txt",
+          "text": "== Firewall Policies ==\nAt the core of a firewall's operation are the policies that govern its decision-making process. These policies, collectively known as firewall rules, are the specific guidelines that determine the traffic allowed or blocked across a network's boundaries.\nFirewall rules are based on the evaluation of network packets against predetermined security criteria. A network packet, which carries data across networks, must match certain attributes defined in a rule to be allowed through the firewall. These attributes commonly include:"
+        }
+      },
+      {
+        "id": "firewall-computing.txt-chunk-2",
+        "score": 0.7880242,
+        "metadata": {
+          "chunk_index": 2,
+          "gen_depth": 0,
+          "ingested_at": "2026-09-04T22:09:10.947Z",
+          "provenance": "human",
+          "source": "firewall-computing.txt",
+          "text": "== Types of firewalls =="
+        }
+      },
+      {
+        "id": "demilitarized-zone-computing.txt-chunk-6",
+        "score": 0.77952105,
+        "metadata": {
+          "chunk_index": 6,
+          "gen_depth": 0,
+          "ingested_at": "2026-09-04T22:08:32.458Z",
+          "provenance": "human",
+          "source": "demilitarized-zone-computing.txt",
+          "text": "=== Dual firewall ==="
+        }
+      }
+    ]
+  }
+}

@@ -42,7 +42,7 @@ export default {
       return new Response("Use POST /ingest with corpus files in the request body", { status: 404 });
     }
 
-    const body = await request.json() as { files: { name: string; content: string }[] };
+    const body = await request.json() as { files: { name: string; content: string; provenance?: string; gen_depth?: number }[] };
     const results: string[] = [];
     let totalChunks = 0;
 
@@ -60,8 +60,8 @@ export default {
 
         const metadata: ProvenanceMetadata = {
           source: file.name,
-          provenance: "human",
-          gen_depth: 0,
+          provenance: file.provenance || "human",
+          gen_depth: file.gen_depth ?? 0,
           ingested_at: new Date().toISOString(),
           chunk_index: i,
           text: chunkText,

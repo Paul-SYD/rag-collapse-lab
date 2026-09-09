@@ -69,6 +69,8 @@ async function handleIngest(request: Request, env: Env): Promise<Response> {
 async function handleAsk(request: Request, env: Env): Promise<Response> {
   const url = new URL(request.url);
   const question = url.searchParams.get("q");
+  const filterHuman = url.searchParams.get("filter") === "human";
+
   if (!question) {
     return new Response(JSON.stringify({ error: "Missing ?q= parameter" }), {
       status: 400,
@@ -79,7 +81,12 @@ async function handleAsk(request: Request, env: Env): Promise<Response> {
   const embeddingResponse = await env.AI.run("@cf/baai/bge-base-en-v1.5", { text: [question] });
   const vector = embeddingResponse.data[0];
 
-  const results = await env.VECTORIZE.query(vector, { topK: 5, returnMetadata: true });
+  const queryOptions: any = { topK: 5, returnMetadata: true };
+  if (filterHuman) {
+    queryOptions.filter = { provenance: { $eq: "human" } };
+  }
+
+  const results = await env.VECTORIZE.query(vector, queryOptions);
 
   const contextChunks = results.matches.map((m: any) => m.metadata.text);
   const context = contextChunks.join("\n\n---\n\n");

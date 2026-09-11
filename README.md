@@ -10,7 +10,7 @@ This project reproduces that failure mode in a small, controlled RAG system, mea
 
 ## Status
 
-In progress - M0 complete (scaffold deployed).
+Complete.
 
 Live endpoint: https://rag-collapse-lab.paulyohanna.workers.dev
 
@@ -25,7 +25,8 @@ Live endpoint: https://rag-collapse-lab.paulyohanna.workers.dev
 
 This verifies the live deployed system (both the unfiltered and provenance-filtered `/ask` endpoints) and regenarates the analysis charts from the committed evidence logs in `evidence/`.
 
-**Note:** the live endpoints depend on this project's specific Cloudflare Workers AI and Vectorize deployment. To fully redeploy your own instance, see the session-by-session build log in this repo's commit history, starting from `wrangler login`. A full article on the step by step process of reproducing on your own is available here: 
+**Note:** the live endpoints depend on this project's specific Cloudflare Workers AI and Vectorize deployment. To fully redeploy your own instance, see the session-by-session build log in this repo's commit history, starting from `wrangler login`. 
+A full article on the step by step process of reproducing on your own is available here: 
 ## Non-goals
 
 - Not trying to detect AI-generated text after the fact (unreliable - that's the point; this project tags provenance at write time instead).

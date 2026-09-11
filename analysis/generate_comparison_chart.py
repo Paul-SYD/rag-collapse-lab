@@ -17,8 +17,8 @@ def load_mean_synthetic(path):
     means = [sum(by_iter[i]) / len(by_iter[i]) for i in iterations]
     return iterations, means
 
-contaminated_iters, contaminated_means = load_mean_synthetic("../evidence/m3-contamination-log.csv")
-controlled_iters, controlled_means = load_mean_synthetic("../evidence/m5-comparison-log.csv")
+contaminated_iters, contaminated_means = load_mean_synthetic("./evidence/m3-contamination-log.csv")
+controlled_iters, controlled_means = load_mean_synthetic("./evidence/m5-comparison-log.csv")
 
 plt.figure(figsize=(9, 5.5))
 plt.plot(contaminated_iters, contaminated_means, marker="o", color="crimson", label="No control (contaminated)")
@@ -29,7 +29,7 @@ plt.ylabel("Mean Synthetic Fraction of Retrieved Chunks")
 plt.ylim(-0.05, 1.05)
 plt.legend()
 plt.grid(True, alpha=0.3)
-plt.savefig("./charts/comparison_overlay.png", dpi=150, bbox_inches="tight")
+plt.savefig("./analysis/charts/comparison_overlay.png", dpi=150, bbox_inches="tight")
 plt.close()
 
 print("Saved comparison_overlay.png")

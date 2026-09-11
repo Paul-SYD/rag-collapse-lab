@@ -7,8 +7,8 @@ matplotlib.use("Agg")  # no display needed, just save files
 import matplotlib.pyplot as plt
 from collections import defaultdict
 
-LOG_PATH = "../evidence/m3-contamination-log.csv"
-OUT_DIR = "./charts"
+LOG_PATH = "./evidence/m3-contamination-log.csv"
+OUT_DIR = "./analysis/charts"
 
 # Read and aggregate by iteration
 by_iteration = defaultdict(lambda: {"synthetic": [], "drift": []})

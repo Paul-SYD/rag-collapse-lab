@@ -26,7 +26,7 @@ async function main() {
     const response = await fetch(INGEST_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ files: [{ name, content }] }),
+      body: JSON.stringify({ files: [{ name, content, provenance: "human", gen_depth: 0 }] }),
     });
 
     if (!response.ok) {

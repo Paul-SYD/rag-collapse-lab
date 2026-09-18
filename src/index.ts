@@ -8,7 +8,7 @@ interface Env {
 
 interface ProvenanceMetadata {
   source: string;
-  provenance: "human" | "generated";
+  provenance: "human" | "generated" | "unknown";
   gen_depth: number;
   ingested_at: string;
   chunk_index: number;
@@ -47,7 +47,7 @@ async function handleIngest(request: Request, env: Env): Promise<Response> {
 
       const metadata: ProvenanceMetadata = {
         source: file.name,
-        provenance: (file.provenance as "human" | "generated") || "human",
+        provenance: (file.provenance as "human" | "generated" | "unknown") || "unknown",
         gen_depth: file.gen_depth ?? 0,
         ingested_at: new Date().toISOString(),
         chunk_index: i,

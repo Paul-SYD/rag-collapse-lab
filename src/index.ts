@@ -15,7 +15,7 @@ interface ProvenanceMetadata {
   text: string;
 }
 
-function chunkText(text: string, maxChunkSize = 500): string[] {
+export function chunkText(text: string, maxChunkSize = 500): string[] {
   const paragraphs = text.split(/\n\s*\n/).filter(p => p.trim().length > 20);
   const chunks: string[] = [];
   let current = "";

@@ -6,11 +6,17 @@ RAG (Retrieval-Augmented Generation) systems that lack provenance tracking can s
 
 This project reproduces that failure mode in a small, controlled RAG system, measures it quantitatively, and implements a provenance-based control that stops it, then proves the control works with a before/after comparison.
 
-**One-sentence pitch:** I saw this break in production, so i built a lab to reproduce it, quantify it, and design the control that stops it.
+**One-sentence pitch:** I saw this break in production, so I built a lab to reproduce it, quantify it, and design the control that stops it.
 
 ## Status
 
 Complete.
+
+## Key Result
+
+![Contamination spread by semantic distance](analysis/charts/v2/gradient_by_tier.png)
+
+Contamination concentrates on queries closest to what corrupted the index. See REPORT.md for full methodology and results.
 
 Live endpoint: https://rag-collapse-lab.paulyohanna.workers.dev
 
@@ -23,13 +29,19 @@ Live endpoint: https://rag-collapse-lab.paulyohanna.workers.dev
 3. `npm install`
 4. `npm run reproduce`
 
-This verifies the live deployed system (both the unfiltered and provenance-filtered `/ask` endpoints) and regenarates the analysis charts from the committed evidence logs in `evidence/`.
+This verifies the live deployed system (both the unfiltered and provenance-filtered `/ask` endpoints) and regenerates the analysis charts from the commited evidence logs in `evidence/`.
+ 
+**Note:** `npm run reproduce` is a smoke test and replot - it verifies the live deployed endpoints respond correctly and regerates charts from the committed evidence CSVs. It does not re-run the full 10-iteration contamination experiment from scratch (that requires significant Workers AI quota and multiple sessions - see the commit history for the full session-by-session build log if you want to reproduce the raw experiment).
 
-**Note:** the live endpoints depend on this project's specific Cloudflare Workers AI and Vectorize deployment. To fully redeploy your own instance, see the session-by-session build log in this repo's commit history, starting from `wrangler login`. 
-A full article on the step by step process of reproducing on your own is available here: 
+**Also Note:** the live endpoints depend on this project's specific Cloudflare Workers AI and Vectorize deployment. To fully redeploy your own instance, see the session-by-session build log in this repo's commit history, starting from `wrangler login`. 
+A full article on the step by step process of reproducing on your own is available here:
+ 
 ## Non-goals
 
 - Not trying to detect AI-generated text after the fact (unreliable - that's the point; this project tags provenance at write time instead).
 - Not a production system. Toy corpus (~15 docs), small models, free tier only.
-- Not claiming novelity over the 2026 "RAG collapse" literature - this is an independent small-scale replication + control demo, with citations.
+- Not claiming novelty over the 2026 "RAG collapse" literature - this is an independent small-scale replication + control demo, with citations.
  
+##References
+
+- Druck, G. & Smith, E. (2026). *RAG Collapse: [paper title as found]*. arXiv:2608.22118. https://arxiv.org/abs/2608.22118

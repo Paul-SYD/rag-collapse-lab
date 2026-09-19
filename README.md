@@ -31,10 +31,9 @@ Live endpoint: https://rag-collapse-lab.paulyohanna.workers.dev
 
 This verifies the live deployed system (both the unfiltered and provenance-filtered `/ask` endpoints) and regenerates the analysis charts from the commited evidence logs in `evidence/`.
  
-**Note:** `npm run reproduce` is a smoke test and replot - it verifies the live deployed endpoints respond correctly and regerates charts from the committed evidence CSVs. It does not re-run the full 10-iteration contamination experiment from scratch (that requires significant Workers AI quota and multiple sessions - see the commit history for the full session-by-session build log if you want to reproduce the raw experiment).
+**Note:** `npm run reproduce` is a smoke test and replot - it verifies the live deployed endpoints respond correctly and regenerates charts from the committed evidence CSVs. It does not re-run the full 10-iteration contamination experiment from scratch (that requires significant Workers AI quota and multiple sessions - see the commit history for the full session-by-session build log if you want to reproduce the raw experiment).
 
 **Also Note:** the live endpoints depend on this project's specific Cloudflare Workers AI and Vectorize deployment. To fully redeploy your own instance, see the session-by-session build log in this repo's commit history, starting from `wrangler login`. 
-A full article on the step by step process of reproducing on your own is available here:
  
 ## Non-goals
 

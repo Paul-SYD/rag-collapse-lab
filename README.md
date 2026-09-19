@@ -41,6 +41,6 @@ This verifies the live deployed system (both the unfiltered and provenance-filte
 - Not a production system. Toy corpus (~15 docs), small models, free tier only.
 - Not claiming novelty over the 2026 "RAG collapse" literature - this is an independent small-scale replication + control demo, with citations.
  
-##References
+## References
 
 - Druck, G. & Smith, E. (2026). *RAG Collapse: [paper title as found]*. arXiv:2608.22118. https://arxiv.org/abs/2608.22118

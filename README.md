@@ -18,6 +18,8 @@ Complete.
 
 Contamination concentrates on queries closest to what corrupted the index. See REPORT.md for full methodology and results.
 
+See [CONTROL.md](./CONTROL.md) for this project's provenance filter written as a formal security control statement (OWASP LLM08, NIST AI RMF).
+
 Live endpoint: https://rag-collapse-lab.paulyohanna.workers.dev
 
 ## Reproducing this project
